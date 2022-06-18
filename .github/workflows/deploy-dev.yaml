@@ -2,12 +2,15 @@ name: deploy-dev
 on:
   push:
     branches:
-      - main
+      - feature/bug-fix_error-gh-pages-deploy
+permissions: write-all
 
 jobs:
   deploy-dev:
     runs-on: ubuntu-latest
     environment: dev
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
 
     steps:
       - name: Checkout
@@ -15,6 +18,16 @@ jobs:
 
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v3.0.0
+        with:
+          persist-credentials: false
 
-      - name: deploy GithubPages
-        run: yarn deploy
+      - name: Build
+        run: sudo yarn build-storybook
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: storybook-static # The folder that the build-storybook script generates files.
+          CLEAN: true # Automatically remove deleted files from the deploy branch

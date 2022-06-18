@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "build-storybook -s public",
+    "build": "build-storybook",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write . ",
-    "predeploy": "build-storybook",
     "deploy:local": "gh-pages -d storybook-static",
-    "deploy": "build-storybook && gh-pages -d storybook-static"
+    "deploy": "yarn build && yarn deploy:local"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -27,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
@@ -37,6 +37,7 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
     "babel-plugin-named-exports-order": "^0.0.2",
     "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
