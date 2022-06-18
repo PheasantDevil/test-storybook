@@ -9,7 +9,8 @@
     "eject": "react-scripts eject",
     "format": "prettier --write . ",
     "predeploy": "build-storybook",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy:local": "gh-pages -d storybook-static",
+    "deploy": "build-storybook && gh-pages -d storybook-static"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
