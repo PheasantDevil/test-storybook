@@ -1,9 +1,8 @@
 name: renovate
 on:
-  workflow_dispatch:
-    schedule:
-      # JST Mon~Fri action on 12:00
-      - cron: '0 3 * * 0-4'
+  schedule:
+    # JST Mon~Fri action on 12:00
+    - cron: '0 3 * * 0-4'
 
 env:
   RENOVATE_REPOSITORIES: ${{ github.repository }}
