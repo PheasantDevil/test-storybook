@@ -1,8 +1,11 @@
 name: renovate
 on:
-  schedule:
-    # JST Mon~Fri action on 12:00
-    - cron: '0 3 * * 0-4'
+  # schedule:
+  #   # JST Mon~Fri action on 12:00
+  #   - cron: '0 3 * * 0-4'
+  push:
+    branches:
+      - 'bug/**'
 
 env:
   RENOVATE_REPOSITORIES: ${{ github.repository }}
