@@ -12,6 +12,7 @@
     "deploy": "yarn build && yarn deploy:local"
   },
   "dependencies": {
+    "@semantic-release/commit-analyzer": "9.0.2",
     "@types/node": "16.11.41",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
@@ -24,6 +25,7 @@
     "@babel/core": "7.18.5",
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
+    "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
     "@storybook/addon-actions": "6.5.9",
     "@storybook/addon-essentials": "6.5.9",
     "@storybook/addon-interactions": "6.5.9",
@@ -45,7 +47,7 @@
     "prettier": "2.7.1",
     "prop-types": "15.8.1",
     "sass": "1.52.3",
-    "semantic-release": "19.0.3",
+    "semantic-release": "^19.0.3",
     "web-vitals": "2.1.4",
     "webpack": "5.73.0"
   },
@@ -75,22 +77,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
-    ],
-    "branches": [
-      "master",
-      "pachage-release"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
     ]
   },
   "husky": {
