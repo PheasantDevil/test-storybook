@@ -11,4 +11,5 @@ module.exports = {
       },
     ],
   ],
+  repositoryUrl: 'https://github.com/PheasantDevil/test-storybook',
 };
