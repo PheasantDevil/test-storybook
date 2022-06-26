@@ -2,6 +2,12 @@
   "name": "test-storybook",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PheasantDevil/test-storybook"
+  },
+  "homepage": "https://pheasantdevil.github.io/test-storybook/",
+  "license": "UNLICENSED",
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
     "build": "build-storybook",
