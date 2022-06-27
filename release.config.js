@@ -11,5 +11,5 @@ module.exports = {
       },
     ],
   ],
-  repositoryUrl: 'https://github.com/PheasantDevil/test-storybook',
+  repositoryUrl: 'https://github.com/PheasantDevil/test-storybook.git',
 };
