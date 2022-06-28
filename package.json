@@ -1,7 +1,6 @@
 {
-  "name": "test-storybook",
+  "name": "@PheasantDevil/test-storybook",
   "version": "0.1.0",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/PheasantDevil/test-storybook.git"
@@ -14,6 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write . ",
+    "format:check": "prettier --check .",
     "deploy:local": "gh-pages -d storybook-static",
     "deploy": "yarn build && yarn deploy:local"
   },
