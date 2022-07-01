@@ -14,9 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: GitHub Action for npx
-        uses: mikeal/npx@1.0.0
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v3.0.0
+        with:
+          persist-credentials: false
 
       - id: prettier-check
-        run: npx prettier --check .
+        run: yarn format:check
         shell: bash

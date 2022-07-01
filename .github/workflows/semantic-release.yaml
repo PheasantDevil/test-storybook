@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: write
 
     steps:
       - name: Checkout
@@ -22,15 +23,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14
+          registry-url: 'https://npm.pkg.github.com/'
+          scope: '@owner'
 
-      - name: GitHub Action for Yarn
-        uses: Borales/actions-yarn@v3.0.0
-        with:
-          persist-credentials: false
+      - run: npm install
+
+      - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # GH_UTL: 'https://github.com/PheasantDevil'
-          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
