@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.18.13",
-    "@commitlint/cli": "17.1.1",
+    "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
     "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
     "@storybook/addon-actions": "6.5.10",
