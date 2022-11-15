@@ -55,7 +55,7 @@
     "sass": "1.56.1",
     "semantic-release": "^19.0.5",
     "web-vitals": "3.0.4",
-    "webpack": "5.74.0"
+    "webpack": "5.75.0"
   },
   "eslintConfig": {
     "extends": [
