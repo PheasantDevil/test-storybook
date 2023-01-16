@@ -54,7 +54,7 @@
     "prop-types": "15.8.1",
     "sass": "1.57.1",
     "semantic-release": "^20.0.2",
-    "web-vitals": "3.1.0",
+    "web-vitals": "3.1.1",
     "webpack": "5.75.0"
   },
   "eslintConfig": {
