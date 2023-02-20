@@ -52,7 +52,7 @@
     "husky": "8.0.3",
     "prettier": "2.8.4",
     "prop-types": "15.8.1",
-    "sass": "1.58.0",
+    "sass": "1.58.3",
     "semantic-release": "^20.1.0",
     "web-vitals": "3.1.1",
     "webpack": "5.75.0"
