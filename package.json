@@ -1,46 +1,59 @@
 {
   "name": "@PheasantDevil/test-storybook",
   "version": "1.1.0",
+  "author": {
+    "name": "Chromatic",
+    "email": "https://chromatic.com/"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PheasantDevil/test-storybook.git"
+    "url": "git+https://github.com/PheasantDevil/test-storybook.git"
   },
   "homepage": "https://pheasantdevil.github.io/test-storybook/",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "start": "start-storybook -p 6006 -s public",
-    "build": "build-storybook",
+    "build:githubPage": "storybook build -o ./_site",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "init-msw": "msw init public/",
     "format": "prettier --write . ",
     "format:check": "prettier --check .",
     "deploy:local": "gh-pages -d storybook-static",
-    "deploy": "yarn build && yarn deploy:local"
+    "deploy": "yarn build && yarn deploy:local",
+    "chromatic": "npx chromatic --project-token=9abf40bb663e"
   },
   "dependencies": {
     "@semantic-release/commit-analyzer": "9.0.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "web-vitals": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.21.5",
     "@commitlint/cli": "17.6.1",
     "@commitlint/config-conventional": "17.6.1",
-    "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
-    "@storybook/addon-actions": "7.0.6",
-    "@storybook/addon-essentials": "7.0.6",
-    "@storybook/addon-interactions": "7.0.6",
-    "@storybook/addon-links": "7.0.6",
-    "@storybook/builder-webpack5": "7.0.6",
-    "@storybook/manager-webpack5": "6.5.16",
-    "@storybook/node-logger": "7.0.6",
-    "@storybook/preset-create-react-app": "7.0.6",
-    "@storybook/react": "7.0.6",
+    "@semantic-release/release-notes-generator": "github:semantic-release/release-notes-generator",
+    "@storybook/addon-actions": "7.0.7",
+    "@storybook/addon-essentials": "7.0.7",
+    "@storybook/addon-interactions": "7.0.7",
+    "@storybook/addon-links": "7.0.7",
+    "@storybook/addon-mdx-gfm": "7.0.7",
+    "@storybook/jest": "^0.1.0",
+    "@storybook/node-logger": "7.0.7",
+    "@storybook/preset-create-react-app": "7.0.7",
+    "@storybook/react": "7.0.7",
+    "@storybook/react-webpack5": "^7.0.7",
     "@storybook/testing-library": "0.1.0",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
@@ -48,12 +61,16 @@
     "@types/jest": "29.5.1",
     "babel-loader": "9.1.2",
     "babel-plugin-named-exports-order": "0.0.2",
+    "chromatic": "^6.17.3",
     "gh-pages": "5.0.0",
     "husky": "8.0.3",
+    "msw": "^0.42.0",
+    "msw-storybook-addon": "^1.8.0",
     "prettier": "2.8.8",
     "prop-types": "15.8.1",
     "sass": "1.62.0",
     "semantic-release": "^21.0.1",
+    "storybook": "^7.0.7",
     "web-vitals": "3.3.1",
     "webpack": "5.79.0"
   },
@@ -89,5 +106,10 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/PheasantDevil/test-storybook/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@PheasantDevil/test-storybook@1.1.0"
 }

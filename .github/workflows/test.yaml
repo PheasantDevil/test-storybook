@@ -1,11 +1,7 @@
 name: test
 on:
   push:
-    branches:
-      - main
-      - 'bug/**'
-      - 'feature/**'
-      - 'renovate/**'
+    branches: ["main", "bug/**", "feature/**", "githubPage/**", "renovate/**"]
 
 jobs:
   check:
