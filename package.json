@@ -28,7 +28,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@babel/core": "7.21.4",
+    "@babel/core": "7.21.5",
     "@commitlint/cli": "17.6.1",
     "@commitlint/config-conventional": "17.6.1",
     "@semantic-release/release-notes-generator": "semantic-release/release-notes-generator",
