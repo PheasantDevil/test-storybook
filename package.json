@@ -27,17 +27,13 @@
   },
   "dependencies": {
     "@semantic-release/commit-analyzer": "9.0.2",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "5.0.4",
-    "web-vitals": "^2.1.0"
+    "typescript": "5.0.4"
   },
   "devDependencies": {
     "@babel/core": "7.21.8",
