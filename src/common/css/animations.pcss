@@ -1,0 +1,79 @@
+@import '~/colors';
+
+:root {
+  --flash-action-00-animation: flash-action-00 700ms ease-out;
+  --flash-danger-00-animation: flash-danger-00 700ms ease-out;
+  --flash-wht-white-animation: flash-wht-white 700ms ease-out;
+  --flash-action-00-hover-animation: flash-action-00-hover 700ms ease-out;
+  --flash-gdark-t2-hover-animation: flash-gdark-t2-hover 700ms ease-out;
+}
+
+@keyframes flash-action-00 {
+  0% {
+    background: var(--wht-wht-active-under-wht-wht-active-gradient);
+  }
+
+  50% {
+    background: var(--action-00-under-wht-wht-hover-gradient);
+  }
+
+  100% {
+    background: var(--action-00-under-wht-wht-hover-gradient);
+  }
+}
+
+@keyframes flash-danger-00 {
+  0% {
+    background: var(--wht-wht-active-under-wht-wht-active-gradient);
+  }
+
+  50% {
+    background: var(--danger-00-under-wht-wht-hover-gradient);
+  }
+
+  100% {
+    background: var(--danger-00-under-wht-wht-hover-gradient);
+  }
+}
+
+@keyframes flash-wht-white {
+  0% {
+    background: var(--waction-00-active-under-action-00-active-gradient);
+  }
+
+  50% {
+    background: var(--wht-white-under-action-00-hover-gradient);
+  }
+
+  100% {
+    background: var(--wht-white-under-action-00-hover-gradient);
+  }
+}
+
+@keyframes flash-action-00-hover {
+  0% {
+    background: var(--action-00-active);
+  }
+
+  50% {
+    background: var(--action-00-hover);
+  }
+
+  100% {
+    background: var(--action-00-hover);
+  }
+}
+
+@keyframes flash-gdark-t2-hover {
+  0% {
+    background: var(--gdark-t2-active);
+  }
+
+  50% {
+    background: var(--gdark-t2-hover);
+  }
+
+  100% {
+    background: var(--gdark-t2-hover);
+  }
+}

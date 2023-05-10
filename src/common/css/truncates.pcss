@@ -1,0 +1,10 @@
+@define-mixin truncate-text {
+  text-overflow: ellipsis;
+  overflow-x: clip;
+  white-space: nowrap;
+
+  /* Safariだと、clipが無いので、hiddenを適用する。 */
+  @supports not (overflow: clip) {
+    overflow: hidden;
+  }
+}

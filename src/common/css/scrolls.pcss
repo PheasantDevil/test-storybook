@@ -1,0 +1,35 @@
+@import '~/sizes';
+
+::-webkit-scrollbar {
+  width: var(--size-16);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gdark-t2);
+  border-radius: 100px;
+  border: solid transparent;
+  background-clip: content-box;
+  border-width: var(--size-4);
+
+  &:hover {
+    background: var(--action-00-hover);
+    background-clip: content-box;
+  }
+
+  &:active {
+    background: var(--action-00-active);
+    background-clip: content-box;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+  border: solid transparent;
+  border-width: var(--size-4);
+
+  &:hover,
+  &:active {
+    background: var(--gdark-t2-hover);
+    background-clip: content-box;
+  }
+}

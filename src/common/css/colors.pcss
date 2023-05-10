@@ -1,0 +1,107 @@
+:root {
+  /* Basic colors */
+  --blk-black: #1a1a1a;
+  --blk-t1: #1a1a1acc;
+  --blk-t2: #1a1a1a99;
+  --blk-t3: #1a1a1a66;
+  --blk-t4: #1a1a1a33;
+  --blk-t5: #1a1a1a1a;
+  --blk-t6: #1a1a1a0d;
+  --wht-white: #fff;
+  --wht-t1: #ffffffba;
+  --wht-t2: #ffffff75;
+  --wht-t3: #ffffff4f;
+  --wht-t4: #ffffff26;
+  --wht-t5: #ffffff1a;
+  --wht-t6: #ffffff0f;
+  --gdark-s2: #23292e;
+  --gdark-s1: #273038e5;
+  --gdark-00: #2c3843cc;
+  --gdark-t1: #303f4d99;
+  --gdark-t2: #394d6166;
+  --gdark-t3: #425c7633;
+  --gdark-t4: #4663801a;
+  --glight-s2: #eceff2;
+  --glight-s1: #c7d0d8e5;
+  --glight-00: #b5c1cccc;
+  --glight-t1: #a2b1bf99;
+  --glight-t2: #7d91a56e;
+  --glight-t3: #58728c45;
+  --glight-t4: #4663802e;
+
+  /* Key colors */
+
+  /* Status colors */
+  --warning-s2: #4c1c00;
+  --warning-s1: #7f2e00;
+  --warning-s0: #b74300;
+  --warning-00: #ff5d00;
+  --warning-t1: #ffa470;
+  --warning-t2: #ffebe0;
+  --safe-s2: #053305;
+  --safe-s1: #095709;
+  --safe-s0: #0c7a0c;
+  --safe-00: #12b212;
+  --safe-t1: #78d378;
+  --safe-t2: #def4de;
+
+  /* FunctionalColors */
+  --action-s2: #05285d;
+  --action-s1: #08429b;
+  --action-00: #0b5edb;
+  --action-t0: #5e95e7;
+  --action-t1: #a0c0f1;
+  --action-t2: #e6effb;
+  --action-00-hover: #0b5edb29;
+  --action-00-active: #0b5edb99;
+  --action-t0-hover: #5e95e729;
+  --action-t0-active: #5e95e799;
+  --danger-s2: #57040b;
+  --danger-s1: #930713;
+  --danger-00: #d10a1b;
+  --danger-t0: #e36c76;
+  --danger-t1: #efabb1;
+  --danger-t2: #fbeced;
+  --gdark-t2-hover: #394d6129;
+  --gdark-t2-active: #394d6199;
+  --wht-wht-hover: #ffffff29;
+  --wht-wht-active: #fff9;
+  --visited-s2: #4d0c53;
+  --visited-s1: #72127b;
+  --visited-00: #9a19a6;
+  --visited-t0: #c478cb;
+  --visited-t1: #deb3e2;
+  --visited-t2: #f7edf8;
+
+  /* Active Stateの表現処理 */
+  --action-00-under-wht-wht-hover-gradient: linear-gradient(
+      0deg,
+      var(--wht-wht-hover),
+      var(--wht-wht-hover)
+    ),
+    var(--action-00);
+  --danger-00-under-wht-wht-hover-gradient: linear-gradient(
+      0deg,
+      var(--wht-wht-hover),
+      var(--wht-wht-hover)
+    ),
+    var(--danger-00);
+  --wht-white-under-action-00-hover-gradient: linear-gradient(
+      0deg,
+      var(--action-00-hover),
+      var(--action-00-hover)
+    ),
+    var(--wht-white);
+  --wht-wht-active-under-wht-wht-active-gradient: linear-gradient(
+      0deg,
+      var(--wht-wht-active),
+      var(--wht-wht-active)
+    ),
+    var(--wht-wht-active);
+  --waction-00-active-under-action-00-active-gradient: linear-gradient(
+      0deg,
+      var(--action-00-active),
+      var(--action-00-active)
+    ),
+    var(--action-00-active);
+}
