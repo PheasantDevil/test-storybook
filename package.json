@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@semantic-release/commit-analyzer": "9.0.2",
-    "@types/node": "18.19.21",
+    "@types/node": "18.19.22",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
     "react": "18.2.0",
