@@ -36,7 +36,7 @@
     "typescript": "5.4.5"
   },
   "devDependencies": {
-    "@babel/core": "7.24.4",
+    "@babel/core": "7.24.5",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@commitlint/cli": "17.8.1",
     "@commitlint/config-conventional": "17.8.1",
