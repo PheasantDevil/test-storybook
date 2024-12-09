@@ -65,7 +65,7 @@
     "msw-storybook-addon": "^1.10.0",
     "prettier": "2.8.8",
     "prop-types": "15.8.1",
-    "sass": "1.81.0",
+    "sass": "1.82.0",
     "semantic-release": "^21.1.2",
     "storybook": "^7.6.20",
     "web-vitals": "3.5.2",
