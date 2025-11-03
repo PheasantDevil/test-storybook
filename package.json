@@ -58,7 +58,7 @@
     "@types/jest": "29.5.14",
     "babel-loader": "10.0.0",
     "babel-plugin-named-exports-order": "0.0.2",
-    "chromatic": "^11.29.0",
+    "chromatic": "^13.3.3",
     "gh-pages": "5.0.0",
     "husky": "8.0.3",
     "msw": "^0.49.3",
