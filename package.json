@@ -61,7 +61,7 @@
     "chromatic": "^13.3.4",
     "gh-pages": "6.3.0",
     "husky": "9.1.7",
-    "msw": "^2.12.2",
+    "msw": "^2.12.3",
     "msw-storybook-addon": "^1.10.0",
     "prettier": "2.8.8",
     "prop-types": "15.8.1",
