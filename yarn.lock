@@ -13774,10 +13774,10 @@ msw-storybook-addon@^2.0.6:
   dependencies:
     is-node-process "^1.0.1"
 
-msw@^2.12.14:
-  version "2.12.14"
-  resolved "https://registry.yarnpkg.com/msw/-/msw-2.12.14.tgz#98c018182e0800277bb327025c5487861a239cbf"
-  integrity sha512-4KXa4nVBIBjbDbd7vfQNuQ25eFxug0aropCQFoI0JdOBuJWamkT1yLVIWReFI8SiTRc+H1hKzaNk+cLk2N9rtQ==
+msw@^2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/msw/-/msw-2.13.2.tgz#41061f344eb4105fc791dc8d2d3672020e164469"
+  integrity sha512-go2H1TIERKkC48pXiwec5l6sbNqYuvqOk3/vHGo1Zd+pq/H63oFawDQerH+WQdUw/flJFHDG7F+QdWMwhntA/A==
   dependencies:
     "@inquirer/confirm" "^5.0.0"
     "@mswjs/interceptors" "^0.41.2"
