@@ -7905,10 +7905,12 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@^15.3.1:
-  version "15.3.1"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-15.3.1.tgz#7fb4e7f26d1f23db6e9ba9cb51d471136bd7f9b3"
-  integrity sha512-2u4ow+Hf2xNusaTj9xkfp7pHMJ2pMnmOQxZPWyB+4SNEqjrMz813E6CJJzczBSlZzeY0waYq56uvpK/CkiUNvQ==
+chromatic@^17.4.1:
+  version "17.4.1"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-17.4.1.tgz#ccf5797c7ee11df36034c0a69a5e7c8b641e55b5"
+  integrity sha512-qL1f0IhOBi0Z6kpQZGR62fJzzCOdjFJLHrJw3QL9YNktj2Kl3+adlU+6psqNGfZUycKF7+pizCSbhsUQNIS/uQ==
+  dependencies:
+    semver "^7.3.5"
 
 chrome-trace-event@^1.0.2:
   version "1.0.3"
