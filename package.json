@@ -69,7 +69,7 @@
     "semantic-release": "^21.1.2",
     "storybook": "^7.6.24",
     "web-vitals": "6.2.1",
-    "webpack": "5.110.2"
+    "webpack": "5.111.0"
   },
   "eslintConfig": {
     "extends": [
