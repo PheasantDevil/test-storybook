@@ -68,7 +68,7 @@
     "sass": "1.103.1",
     "semantic-release": "^21.1.2",
     "storybook": "^7.6.24",
-    "web-vitals": "6.2.2",
+    "web-vitals": "6.2.3",
     "webpack": "5.111.1"
   },
   "eslintConfig": {
