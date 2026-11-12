@@ -63,7 +63,7 @@
     "husky": "9.1.7",
     "msw": "^2.15.0",
     "msw-storybook-addon": "^3.0.3",
-    "prettier": "2.8.8",
+    "prettier": "3.10.1",
     "prop-types": "15.8.1",
     "sass": "1.108.2",
     "semantic-release": "^21.1.2",
